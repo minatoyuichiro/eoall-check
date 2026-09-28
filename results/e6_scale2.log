@@ -1,0 +1,4 @@
+st cat_V16L2 init|neel> bubble=64 p=480 pi: KL init 3.1349 -> final 0.0388  TV=0.0766 leak=0.796 [511s]
+st cat_V16L2 init|neel> bubble=48 p=360 pi: KL init 2.5312 -> final 0.0377  TV=0.0750 leak=0.810 [2006s]
+st cat_V16L2 init|neel> bubble=96 p=720 pi: KL init 3.3179 -> final 0.0250  TV=0.0578 leak=0.588 [607s]
+st begin_V4L4 init|neel> bubble=64 p=480 pi: KL init 2.4673 -> final 0.0379  TV=0.0649 leak=0.845 [540s]

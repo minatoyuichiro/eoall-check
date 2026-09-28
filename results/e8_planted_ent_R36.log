@@ -1,0 +1,7 @@
+R=36 lam=0.5 plant 0: leak 4.7e-04 top1 0.250
+R=36 lam=0.5 plant 1: leak 4.7e-08 top1 0.250
+R=36 plant 1: recovery F=1.000000 leak=2.8e-09 F_seeds[min/med]=1.000/1.000 [104s]
+R=36 lam=0.5 plant 2: leak 7.2e-09 top1 0.250
+R=36 plant 2: recovery F=1.000000 leak=1.8e-09 F_seeds[min/med]=1.000/1.000 [101s]
+R=36 lam=0.5 plant 3: leak 7.7e-09 top1 0.250
+R=36 plant 3: recovery F=1.000000 leak=6.5e-10 F_seeds[min/med]=1.000/1.000 [99s]

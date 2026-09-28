@@ -1,0 +1,26 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 16025.33it/s]
+target rand0: det Q = 1.000, |P-I|_F/|P|_F = 0.721
+target rand1: det Q = -1.000, |P-I|_F/|P|_F = 0.729
+target rand2: det Q = 1.000, |P-I|_F/|P|_F = 0.716
+target gpt2_cproj: det Q = -1.000, |P-I|_F/|P|_F = 1.438
+eo n=3 N=9 bubble R=18 p= 72 rand0     : F_proc=0.457470 leak=1.4e-01 [850s]
+eo n=3 N=9 bubble R=18 p= 72 rand1     : F_proc=0.495177 leak=2.2e-01 [1626s]
+eo n=3 N=9 bubble R=18 p= 72 rand2     : F_proc=0.446782 leak=2.5e-01 [2326s]
+eo n=3 N=9 bubble R=18 p= 72 gpt2_cproj: F_proc=0.403607 leak=3.5e-01 [2856s]
+eo n=3 N=9 bubble R=27 p=108 rand0     : F_proc=0.553592 leak=2.5e-01 [690s]
+eo n=3 N=9 bubble R=27 p=108 rand1     : F_proc=0.660439 leak=2.1e-01 [1248s]
+eo n=3 N=9 bubble R=27 p=108 rand2     : F_proc=0.678726 leak=1.6e-01 [1820s]
+eo n=3 N=9 bubble R=27 p=108 gpt2_cproj: F_proc=0.625143 leak=2.3e-01 [2266s]
+eo n=3 N=9 bubble R=36 p=144 rand0     : F_proc=0.848537 leak=1.0e-01 [665s]
+eo n=3 N=9 bubble R=36 p=144 rand1     : F_proc=0.660481 leak=2.5e-01 [1499s]
+eo n=3 N=9 bubble R=36 p=144 rand2     : F_proc=0.593572 leak=3.5e-01 [2382s]
+eo n=3 N=9 bubble R=36 p=144 gpt2_cproj: F_proc=0.645158 leak=2.9e-01 [3223s]
+eo n=3 N=9 bubble R=45 p=180 rand0     : F_proc=0.660838 leak=3.2e-01 [1117s]
+eo n=3 N=9 bubble R=45 p=180 rand1     : F_proc=0.862755 leak=9.9e-02 [2239s]
+eo n=3 N=9 bubble R=45 p=180 rand2     : F_proc=0.671412 leak=3.0e-01 [3396s]
+eo n=3 N=9 bubble R=45 p=180 gpt2_cproj: F_proc=0.747773 leak=2.2e-01 [4541s]
+eo n=3 N=9 bubble R=54 p=216 rand0     : F_proc=0.724207 leak=2.5e-01 [1397s]
+eo n=3 N=9 bubble R=54 p=216 rand1     : F_proc=0.728039 leak=2.4e-01 [2810s]
+eo n=3 N=9 bubble R=54 p=216 rand2     : F_proc=0.733278 leak=2.4e-01 [4213s]
+eo n=3 N=9 bubble R=54 p=216 gpt2_cproj: F_proc=0.721259 leak=2.6e-01 [5499s]

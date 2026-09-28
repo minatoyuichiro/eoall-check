@@ -1,0 +1,4 @@
+R=54 plant 0: leak of planted network 1.9e-01, |M0-Q0|=7.7e-02, op-Schmidt top1 (1|2 cut) 0.385
+R=54 plant 0: recovery F=0.721203 leak=2.6e-01 F_seeds[min/med]=0.704/0.712 [146s]
+R=54 plant 1: leak of planted network 2.0e-01, |M0-Q0|=8.8e-02, op-Schmidt top1 (1|2 cut) 0.308
+R=54 plant 1: recovery F=0.726486 leak=2.5e-01 F_seeds[min/med]=0.705/0.714 [147s]

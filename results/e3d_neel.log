@@ -1,0 +1,6 @@
+cat_V8L2 init|neel>: sector weights c_S^2 = S=-0:0.143(m=132), S=1:0.321(m=297), S=2:0.298(m=275), S=3:0.167(m=154), S=4:0.058(m=54), S=5:0.012(m=11), S=6:0.001(m=1)
+  seed 0: KL ceiling = 0.0000  TV=0.0000 [375s]
+  seed 1: KL ceiling = 0.0000  TV=0.0000 [267s]
+begin_V4L3 init|neel>: sector weights c_S^2 = S=-0:0.143(m=132), S=1:0.321(m=297), S=2:0.298(m=275), S=3:0.167(m=154), S=4:0.058(m=54), S=5:0.012(m=11), S=6:0.001(m=1)
+  seed 0: KL ceiling = -0.0000  TV=0.0000 [209s]
+  seed 1: KL ceiling = -0.0000  TV=0.0000 [155s]

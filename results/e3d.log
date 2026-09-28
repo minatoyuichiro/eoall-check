@@ -1,0 +1,24 @@
+cat_V8L2 init|alt>: sector weights c_S^2 = S=-0:0.000(m=132), S=1:0.600(m=297), S=2:0.000(m=275), S=3:0.400(m=154), S=4:0.000(m=54), S=5:0.000(m=11), S=6:0.000(m=1)
+  seed 0: KL ceiling = 0.2597  TV=0.0117 [73s]
+  seed 1: KL ceiling = 0.2597  TV=0.0117 [66s]
+  seed 2: KL ceiling = 0.2597  TV=0.0117 [59s]
+cat_V8L2 init|1>: sector weights c_S^2 = S=-0:0.143(m=132), S=1:0.000(m=297), S=2:0.476(m=275), S=3:0.000(m=154), S=4:0.312(m=54), S=5:0.000(m=11), S=6:0.069(m=1)
+  seed 0: KL ceiling = 1.2506  TV=0.1620 [79s]
+  seed 1: KL ceiling = 1.2506  TV=0.1620 [76s]
+  seed 2: KL ceiling = 1.2506  TV=0.1620 [77s]
+cat_V8L2 init|0>: sector weights c_S^2 = S=-0:1.000(m=132), S=1:0.000(m=297), S=2:0.000(m=275), S=3:0.000(m=154), S=4:0.000(m=54), S=5:0.000(m=11), S=6:0.000(m=1)
+  seed 0: KL ceiling = 1.1691  TV=0.0528 [79s]
+  seed 1: KL ceiling = 1.1691  TV=0.0528 [81s]
+  seed 2: KL ceiling = 1.1691  TV=0.0528 [62s]
+begin_V4L3 init|alt>: sector weights c_S^2 = S=-0:0.000(m=132), S=1:0.600(m=297), S=2:0.000(m=275), S=3:0.400(m=154), S=4:0.000(m=54), S=5:0.000(m=11), S=6:0.000(m=1)
+  seed 0: KL ceiling = 0.0000  TV=0.0000 [104s]
+  seed 1: KL ceiling = 0.0000  TV=0.0000 [102s]
+  seed 2: KL ceiling = 0.0000  TV=0.0000 [156s]
+begin_V4L3 init|1>: sector weights c_S^2 = S=-0:0.143(m=132), S=1:0.000(m=297), S=2:0.476(m=275), S=3:0.000(m=154), S=4:0.312(m=54), S=5:0.000(m=11), S=6:0.069(m=1)
+  seed 0: KL ceiling = 6.3226  TV=0.2480 [292s]
+  seed 1: KL ceiling = 6.3226  TV=0.2480 [255s]
+  seed 2: KL ceiling = 6.3226  TV=0.2480 [172s]
+begin_V4L3 init|0>: sector weights c_S^2 = S=-0:1.000(m=132), S=1:0.000(m=297), S=2:0.000(m=275), S=3:0.000(m=154), S=4:0.000(m=54), S=5:0.000(m=11), S=6:0.000(m=1)
+  seed 0: KL ceiling = 6.2887  TV=0.2480 [124s]
+  seed 1: KL ceiling = 6.2887  TV=0.2480 [57s]
+  seed 2: KL ceiling = 6.2887  TV=0.2480 [49s]

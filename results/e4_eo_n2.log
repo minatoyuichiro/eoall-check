@@ -1,0 +1,30 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 7427.72it/s]
+target rand0: det Q = -1.000, |P-I|_F/|P|_F = 0.615
+target rand1: det Q = -1.000, |P-I|_F/|P|_F = 0.502
+target rand2: det Q = 1.000, |P-I|_F/|P|_F = 0.685
+target gpt2_cproj: det Q = -1.000, |P-I|_F/|P|_F = 2.091
+eo n=2 N=6 bubble R= 8 p= 20 rand0     : F_proc=0.730252 leak=2.1e-01 [23s]
+eo n=2 N=6 bubble R= 8 p= 20 rand1     : F_proc=0.898424 leak=9.3e-03 [39s]
+eo n=2 N=6 bubble R= 8 p= 20 rand2     : F_proc=0.617093 leak=3.1e-01 [57s]
+eo n=2 N=6 bubble R= 8 p= 20 gpt2_cproj: F_proc=0.654792 leak=2.3e-01 [78s]
+eo n=2 N=6 bubble R=12 p= 30 rand0     : F_proc=0.953927 leak=3.5e-02 [39s]
+eo n=2 N=6 bubble R=12 p= 30 rand1     : F_proc=0.956671 leak=1.2e-02 [82s]
+eo n=2 N=6 bubble R=12 p= 30 rand2     : F_proc=0.904187 leak=8.4e-02 [112s]
+eo n=2 N=6 bubble R=12 p= 30 gpt2_cproj: F_proc=0.878196 leak=8.1e-02 [137s]
+eo n=2 N=6 bubble R=16 p= 40 rand0     : F_proc=0.986646 leak=1.2e-02 [86s]
+eo n=2 N=6 bubble R=16 p= 40 rand1     : F_proc=0.986647 leak=7.8e-03 [167s]
+eo n=2 N=6 bubble R=16 p= 40 rand2     : F_proc=0.974782 leak=2.0e-02 [227s]
+eo n=2 N=6 bubble R=16 p= 40 gpt2_cproj: F_proc=0.975133 leak=2.2e-02 [280s]
+eo n=2 N=6 bubble R=20 p= 50 rand0     : F_proc=0.999715 leak=1.5e-04 [170s]
+eo n=2 N=6 bubble R=20 p= 50 rand1     : F_proc=0.999475 leak=4.5e-04 [420s]
+eo n=2 N=6 bubble R=20 p= 50 rand2     : F_proc=0.998752 leak=1.1e-03 [582s]
+eo n=2 N=6 bubble R=20 p= 50 gpt2_cproj: F_proc=0.997287 leak=2.2e-03 [712s]
+eo n=2 N=6 bubble R=24 p= 60 rand0     : F_proc=1.000000 leak=1.6e-13 [297s]
+eo n=2 N=6 bubble R=24 p= 60 rand1     : F_proc=1.000000 leak=2.9e-13 [470s]
+eo n=2 N=6 bubble R=24 p= 60 rand2     : F_proc=1.000000 leak=7.5e-14 [647s]
+eo n=2 N=6 bubble R=24 p= 60 gpt2_cproj: F_proc=1.000000 leak=1.3e-13 [834s]
+eo n=2 N=6 bubble R=28 p= 70 rand0     : F_proc=1.000000 leak=1.0e-13 [158s]
+eo n=2 N=6 bubble R=28 p= 70 rand1     : F_proc=1.000000 leak=1.7e-13 [458s]
+eo n=2 N=6 bubble R=28 p= 70 rand2     : F_proc=1.000000 leak=1.6e-13 [650s]
+eo n=2 N=6 bubble R=28 p= 70 gpt2_cproj: F_proc=1.000000 leak=7.3e-13 [936s]

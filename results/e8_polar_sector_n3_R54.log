@@ -1,0 +1,6 @@
+n=3 N=9 sector dim 84
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 22668.60it/s]
+n=3 R=54 p=216 rand0      F=0.729569 leak=2.5e-01 F_seeds[min/med]=0.709/0.721 err_QP=0.209 err_fit=0.000 [839s]
+n=3 R=54 p=216 gpt2_cproj F=0.730927 leak=2.4e-01 F_seeds[min/med]=0.696/0.721 err_QP=0.216 err_fit=0.000 [780s]
+n=3 R=54 p=216 prod_2x1   F=1.000000 leak=3.5e-08 F_seeds[min/med]=0.723/0.979 err_QP=0.000 err_fit=0.000 [768s]
+n=3 R=54 p=216 identity   F=1.000000 leak=1.1e-09 F_seeds[min/med]=0.726/0.995 err_QP=0.000 err_fit=0.000 [736s]

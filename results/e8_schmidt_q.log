@@ -1,0 +1,62 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 1985.57it/s]
+d=  4 gpt2  attn.c_proj  L 0 top1=0.445 n90=  3/  4 n99=  4 S=1.50b |P-I|/|P|=2.09
+d=  4 gpt2  mlp.c_fc     L 0 top1=0.332 n90=  4/  4 n99=  4 S=1.92b |P-I|/|P|=4.22
+d=  4 gpt2  attn.c_proj  L 6 top1=0.327 n90=  4/  4 n99=  4 S=1.93b |P-I|/|P|=5.66
+d=  4 gpt2  mlp.c_fc     L 6 top1=0.381 n90=  4/  4 n99=  4 S=1.83b |P-I|/|P|=2.78
+d=  4 gpt2  attn.c_proj  L11 top1=0.456 n90=  2/  4 n99=  4 S=1.43b |P-I|/|P|=5.39
+d=  4 gpt2  mlp.c_fc     L11 top1=0.535 n90=  3/  4 n99=  4 S=1.45b |P-I|/|P|=3.66
+d=  4 haar  haar         L 0 top1=0.768 n90=  2/  4 n99=  3 S=0.86b
+d=  4 haar  haar         L 1 top1=0.949 n90=  1/  4 n99=  3 S=0.34b
+d=  4 haar  haar         L 2 top1=0.542 n90=  3/  4 n99=  4 S=1.64b
+d=  4 gauss gauss_polar  L 0 top1=0.496 n90=  2/  4 n99=  2 S=1.07b
+d=  4 gauss gauss_polar  L 1 top1=0.476 n90=  2/  4 n99=  4 S=1.28b
+d=  4 gauss gauss_polar  L 2 top1=0.315 n90=  4/  4 n99=  4 S=1.96b
+d=  8 gpt2  attn.c_proj  L 0 top1=0.354 n90=  4/  4 n99=  4 S=1.91b |P-I|/|P|=1.44
+d=  8 gpt2  mlp.c_fc     L 0 top1=0.446 n90=  4/  4 n99=  4 S=1.86b |P-I|/|P|=1.72
+d=  8 gpt2  attn.c_proj  L 6 top1=0.405 n90=  3/  4 n99=  4 S=1.85b |P-I|/|P|=3.45
+d=  8 gpt2  mlp.c_fc     L 6 top1=0.338 n90=  4/  4 n99=  4 S=1.91b |P-I|/|P|=1.87
+d=  8 gpt2  attn.c_proj  L11 top1=0.357 n90=  4/  4 n99=  4 S=1.87b |P-I|/|P|=2.74
+d=  8 gpt2  mlp.c_fc     L11 top1=0.443 n90=  4/  4 n99=  4 S=1.87b |P-I|/|P|=2.34
+d=  8 haar  haar         L 0 top1=0.327 n90=  4/  4 n99=  4 S=1.96b
+d=  8 haar  haar         L 1 top1=0.459 n90=  4/  4 n99=  4 S=1.81b
+d=  8 haar  haar         L 2 top1=0.375 n90=  4/  4 n99=  4 S=1.93b
+d=  8 gauss gauss_polar  L 0 top1=0.410 n90=  4/  4 n99=  4 S=1.91b
+d=  8 gauss gauss_polar  L 1 top1=0.361 n90=  3/  4 n99=  4 S=1.87b
+d=  8 gauss gauss_polar  L 2 top1=0.349 n90=  4/  4 n99=  4 S=1.92b
+d= 16 gpt2  attn.c_proj  L 0 top1=0.185 n90= 10/ 16 n99= 13 S=3.44b |P-I|/|P|=1.26
+d= 16 gpt2  mlp.c_fc     L 0 top1=0.188 n90= 10/ 16 n99= 14 S=3.42b |P-I|/|P|=1.31
+d= 16 gpt2  attn.c_proj  L 6 top1=0.204 n90=  9/ 16 n99= 13 S=3.37b |P-I|/|P|=2.30
+d= 16 gpt2  mlp.c_fc     L 6 top1=0.236 n90=  9/ 16 n99= 13 S=3.27b |P-I|/|P|=1.38
+d= 16 gpt2  attn.c_proj  L11 top1=0.213 n90=  9/ 16 n99= 13 S=3.33b |P-I|/|P|=1.60
+d= 16 gpt2  mlp.c_fc     L11 top1=0.223 n90=  8/ 16 n99= 12 S=3.23b |P-I|/|P|=1.22
+d= 16 haar  haar         L 0 top1=0.193 n90=  9/ 16 n99= 13 S=3.33b
+d= 16 haar  haar         L 1 top1=0.203 n90=  9/ 16 n99= 13 S=3.29b
+d= 16 haar  haar         L 2 top1=0.216 n90=  9/ 16 n99= 13 S=3.26b
+d= 16 gauss gauss_polar  L 0 top1=0.157 n90=  9/ 16 n99= 13 S=3.40b
+d= 16 gauss gauss_polar  L 1 top1=0.194 n90=  8/ 16 n99= 13 S=3.26b
+d= 16 gauss gauss_polar  L 2 top1=0.223 n90=  9/ 16 n99= 13 S=3.31b
+d= 64 gpt2  attn.c_proj  L 0 top1=0.056 n90= 33/ 64 n99= 49 S=5.29b |P-I|/|P|=0.80
+d= 64 gpt2  mlp.c_fc     L 0 top1=0.059 n90= 33/ 64 n99= 49 S=5.28b |P-I|/|P|=0.60
+d= 64 gpt2  attn.c_proj  L 6 top1=0.062 n90= 33/ 64 n99= 49 S=5.26b |P-I|/|P|=0.84
+d= 64 gpt2  mlp.c_fc     L 6 top1=0.056 n90= 34/ 64 n99= 50 S=5.31b |P-I|/|P|=0.58
+d= 64 gpt2  attn.c_proj  L11 top1=0.059 n90= 33/ 64 n99= 49 S=5.28b |P-I|/|P|=0.64
+d= 64 gpt2  mlp.c_fc     L11 top1=0.057 n90= 34/ 64 n99= 50 S=5.31b |P-I|/|P|=0.56
+d= 64 haar  haar         L 0 top1=0.057 n90= 33/ 64 n99= 50 S=5.29b
+d= 64 haar  haar         L 1 top1=0.058 n90= 33/ 64 n99= 50 S=5.28b
+d= 64 haar  haar         L 2 top1=0.059 n90= 33/ 64 n99= 50 S=5.31b
+d= 64 gauss gauss_polar  L 0 top1=0.061 n90= 34/ 64 n99= 51 S=5.30b
+d= 64 gauss gauss_polar  L 1 top1=0.061 n90= 33/ 64 n99= 49 S=5.27b
+d= 64 gauss gauss_polar  L 2 top1=0.060 n90= 33/ 64 n99= 50 S=5.29b
+d=256 gpt2  attn.c_proj  L 0 top1=0.015 n90=131/256 n99=198 S=7.28b |P-I|/|P|=0.81
+d=256 gpt2  mlp.c_fc     L 0 top1=0.015 n90=131/256 n99=198 S=7.28b |P-I|/|P|=0.69
+d=256 gpt2  attn.c_proj  L 6 top1=0.015 n90=131/256 n99=197 S=7.28b |P-I|/|P|=0.63
+d=256 gpt2  mlp.c_fc     L 6 top1=0.015 n90=130/256 n99=198 S=7.27b |P-I|/|P|=0.66
+d=256 gpt2  attn.c_proj  L11 top1=0.015 n90=131/256 n99=197 S=7.28b |P-I|/|P|=0.79
+d=256 gpt2  mlp.c_fc     L11 top1=0.015 n90=131/256 n99=198 S=7.28b |P-I|/|P|=0.66
+d=256 haar  haar         L 0 top1=0.015 n90=131/256 n99=198 S=7.28b
+d=256 haar  haar         L 1 top1=0.015 n90=131/256 n99=197 S=7.28b
+d=256 haar  haar         L 2 top1=0.016 n90=131/256 n99=197 S=7.28b
+d=256 gauss gauss_polar  L 0 top1=0.016 n90=131/256 n99=198 S=7.28b
+d=256 gauss gauss_polar  L 1 top1=0.016 n90=131/256 n99=197 S=7.28b
+d=256 gauss gauss_polar  L 2 top1=0.016 n90=132/256 n99=198 S=7.28b

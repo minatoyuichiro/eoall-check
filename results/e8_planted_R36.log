@@ -1,0 +1,4 @@
+R=36 plant 0: leak of planted network 3.5e-13, |M0-Q0|=2.2e-13, op-Schmidt top1 (1|2 cut) 1.000
+R=36 plant 0: recovery F=1.000000 leak=1.5e-10 F_seeds[min/med]=0.999/1.000 [96s]
+R=36 plant 1: leak of planted network 2.8e-13, |M0-Q0|=1.4e-13, op-Schmidt top1 (1|2 cut) 1.000
+R=36 plant 1: recovery F=1.000000 leak=1.9e-12 F_seeds[min/med]=0.999/1.000 [109s]

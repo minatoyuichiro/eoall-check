@@ -1,0 +1,7 @@
+n=3 N=9 sector dim 84
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 21833.81it/s]
+n=3 R=90 p=360 rand0      F=0.909787 leak=8.7e-02 F_seeds[min/med]=0.900/0.908 err_QP=0.068 err_fit=0.000 [1177s]
+n=3 R=90 p=360 gpt2_cproj F=0.915559 leak=8.0e-02 F_seeds[min/med]=0.905/0.909 err_QP=0.079 err_fit=0.000 [1106s]
+n=3 R=90 p=360 prod_2x1   F=0.914819 leak=8.0e-02 F_seeds[min/med]=0.897/0.907 err_QP=0.087 err_fit=0.000 [981s]
+n=3 R=90 p=360 identity   F=0.911861 leak=8.3e-02 F_seeds[min/med]=0.900/0.908 err_QP=0.082 err_fit=0.000 [842s]

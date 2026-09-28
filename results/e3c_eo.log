@@ -1,0 +1,12 @@
+eo cat_V8L2 init|0> bubble=18 p=153 random: KL init 2.8575 -> final 0.0136  TV=0.0380 leak=0.946 [547s]
+eo cat_V8L2 init|0> bubble=18 p=153 pi: KL init 2.8386 -> final 0.0112  TV=0.0344 leak=0.922 [2720s]
+eo cat_V8L2 init|0> bubble=18 p=153 zero: KL init 5.7722 -> final 0.2022  TV=0.2244 leak=0.897 [2867s]
+  pretrain: F(MPS chi=4) = 0.7560, KL after pretrain = 0.4154 (teacher||MPS = 0.0048)
+eo cat_V8L2 init|0> bubble=18 p=153 mps4: KL init 0.4154 -> final 0.0240  TV=0.0498 leak=0.609 [1457s]
+eo cat_V8L2 init|0> stair=9 p=153 random: KL init 2.9649 -> final 0.0177  TV=0.0425 leak=0.958 [703s]
+eo cat_V8L2 init|0> bubble=36 p=306 random: KL init 2.8611 -> final 0.0038  TV=0.0185 leak=0.951 [943s]
+  pretrain: F(MPS chi=4) = 0.8789, KL after pretrain = 0.1485 (teacher||MPS = 0.0048)
+eo cat_V8L2 init|0> bubble=36 p=306 mps4: KL init 0.1485 -> final 0.0051  TV=0.0254 leak=0.554 [918s]
+eo begin_V4L3 init|0> bubble=18 p=153 random: KL init 2.6824 -> final 0.0497  TV=0.0626 leak=0.993 [206s]
+  pretrain: F(MPS chi=4) = 0.9040, KL after pretrain = 0.2588 (teacher||MPS = 0.0008)
+eo begin_V4L3 init|0> bubble=18 p=153 mps4: KL init 0.2588 -> final 0.0594  TV=0.0712 leak=0.878 [417s]

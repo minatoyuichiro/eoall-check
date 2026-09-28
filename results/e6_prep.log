@@ -1,0 +1,14 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 10881.12it/s]
+cat_V16L2: vocab=[' the', ' a', ' her', ' its', ' his', ' top', ' my', ' one', ' it', ' an', ' me', ' him', ' their', ' that', ' another', ' this']  H=4.446 bits (max 8.0)  max p=0.405
+begin_V4L4: vocab=[',', ' of', ' I', ' the']  H=4.628 bits (max 8.0)  max p=0.199
+cat_V16L2 chi=1: KL(teacher||MPS) = 0.5625 nats  (seeds [0.5625 0.5625 0.5625])
+cat_V16L2 chi=2: KL(teacher||MPS) = 0.2344 nats  (seeds [0.2344 0.2732 0.4238])
+cat_V16L2 chi=4: KL(teacher||MPS) = 0.0361 nats  (seeds [0.1566 0.0361 0.1274])
+cat_V16L2 chi=8: KL(teacher||MPS) = 0.0047 nats  (seeds [0.0067 0.0047 0.0072])
+cat_V16L2 chi=16: KL(teacher||MPS) = 0.0000 nats  (seeds [0. 0. 0.])
+begin_V4L4 chi=1: KL(teacher||MPS) = 1.2793 nats  (seeds [1.2793 1.2793 1.2793])
+begin_V4L4 chi=2: KL(teacher||MPS) = 0.2330 nats  (seeds [0.5921 0.233  0.3031])
+begin_V4L4 chi=4: KL(teacher||MPS) = 0.0248 nats  (seeds [0.0476 0.0248 0.0275])
+begin_V4L4 chi=8: KL(teacher||MPS) = 0.0006 nats  (seeds [0.0009 0.001  0.0006])
+begin_V4L4 chi=16: KL(teacher||MPS) = 0.0000 nats  (seeds [0. 0. 0.])

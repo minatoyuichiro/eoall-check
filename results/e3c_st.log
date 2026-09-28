@@ -1,0 +1,28 @@
+st cat_V8L2 init|alt> bubble=12 p=66 random: KL init 2.8445 -> final 0.3772  TV=0.2038 leak=0.893 [39s]
+st cat_V8L2 init|alt> bubble=12 p=66 zero: KL init 17.7066 -> final 0.4598  TV=0.2545 leak=0.900 [40s]
+st cat_V8L2 init|alt> bubble=12 p=66 pi: KL init 11.2811 -> final 0.4760  TV=0.2835 leak=0.799 [27s]
+st cat_V8L2 init|alt> bubble=24 p=132 random: KL init 4.0111 -> final 0.3326  TV=0.1668 leak=0.903 [64s]
+st cat_V8L2 init|alt> stair=6 p=66 random: KL init 3.1903 -> final 0.3884  TV=0.2079 leak=0.904 [30s]
+  pretrain: F(MPS chi=4) = 0.2386, KL after pretrain = 4.5135 (teacher||MPS = 0.0048)
+st cat_V8L2 init|alt> bubble=12 p=66 mps4: KL init 4.5135 -> final 0.3739  TV=0.1986 leak=0.867 [55s]
+st cat_V8L2 init|1> bubble=12 p=66 random: KL init 3.8225 -> final 1.6954  TV=0.4357 leak=0.822 [32s]
+st cat_V8L2 init|1> bubble=12 p=66 zero: KL init 18.1163 -> final 1.9526  TV=0.5369 leak=0.871 [30s]
+st cat_V8L2 init|1> bubble=12 p=66 pi: KL init 9.2979 -> final 1.7612  TV=0.4767 leak=0.879 [32s]
+st cat_V8L2 init|1> bubble=24 p=132 random: KL init 3.7642 -> final 1.4733  TV=0.3593 leak=0.607 [62s]
+st cat_V8L2 init|1> stair=6 p=66 random: KL init 3.9126 -> final 1.4778  TV=0.3311 leak=0.729 [34s]
+  pretrain: F(MPS chi=4) = 0.2972, KL after pretrain = 2.5934 (teacher||MPS = 0.0048)
+st cat_V8L2 init|1> bubble=12 p=66 mps4: KL init 2.5934 -> final 1.8126  TV=0.4998 leak=0.637 [56s]
+st begin_V4L3 init|alt> bubble=12 p=66 random: KL init 2.2548 -> final 0.1143  TV=0.1351 leak=0.675 [30s]
+st begin_V4L3 init|alt> bubble=12 p=66 zero: KL init 16.8944 -> final 0.2297  TV=0.1792 leak=0.674 [30s]
+st begin_V4L3 init|alt> bubble=12 p=66 pi: KL init 6.7054 -> final 0.1271  TV=0.1583 leak=0.766 [24s]
+st begin_V4L3 init|alt> bubble=24 p=132 random: KL init 2.9501 -> final 0.0322  TV=0.0552 leak=0.686 [82s]
+st begin_V4L3 init|alt> stair=6 p=66 random: KL init 3.4027 -> final 0.1340  TV=0.1422 leak=0.669 [260s]
+  pretrain: F(MPS chi=4) = 0.5036, KL after pretrain = 1.4896 (teacher||MPS = 0.0008)
+st begin_V4L3 init|alt> bubble=12 p=66 mps4: KL init 1.4896 -> final 0.1271  TV=0.1338 leak=0.704 [630s]
+st begin_V4L3 init|1> bubble=12 p=66 random: KL init 8.1406 -> final 6.6282  TV=0.4040 leak=0.904 [95s]
+st begin_V4L3 init|1> bubble=12 p=66 zero: KL init 17.0953 -> final 6.9823  TV=0.6200 leak=0.851 [55s]
+st begin_V4L3 init|1> bubble=12 p=66 pi: KL init 12.5905 -> final 6.7320  TV=0.4714 leak=0.898 [45s]
+st begin_V4L3 init|1> bubble=24 p=132 random: KL init 7.9272 -> final 6.4487  TV=0.2994 leak=0.865 [120s]
+st begin_V4L3 init|1> stair=6 p=66 random: KL init 7.9034 -> final 6.5693  TV=0.3566 leak=0.943 [89s]
+  pretrain: F(MPS chi=4) = 0.2346, KL after pretrain = 8.1821 (teacher||MPS = 0.0008)
+st begin_V4L3 init|1> bubble=12 p=66 mps4: KL init 8.1821 -> final 6.5738  TV=0.3663 leak=0.885 [125s]

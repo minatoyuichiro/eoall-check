@@ -1,0 +1,8 @@
+st cat_V8L2 init|neel> bubble=12 p=66 random: KL init 3.0144 -> final 0.1167  TV=0.1872 leak=0.842 [325s]
+st cat_V8L2 init|neel> bubble=24 p=132 random: KL init 2.4404 -> final 0.0336  TV=0.0818 leak=0.843 [489s]
+st cat_V8L2 init|neel> stair=6 p=66 random: KL init 2.6155 -> final 0.0816  TV=0.1482 leak=0.817 [176s]
+st cat_V8L2 init|neel> bubble=12 p=66 pi: KL init 1.4802 -> final 0.0576  TV=0.1145 leak=0.816 [126s]
+st begin_V4L3 init|neel> bubble=12 p=66 random: KL init 2.6784 -> final 0.2261  TV=0.2102 leak=0.706 [215s]
+st begin_V4L3 init|neel> bubble=24 p=132 random: KL init 3.1626 -> final 0.0741  TV=0.1118 leak=0.663 [362s]
+st begin_V4L3 init|neel> stair=6 p=66 random: KL init 2.3622 -> final 0.1745  TV=0.1924 leak=0.664 [63s]
+st begin_V4L3 init|neel> bubble=12 p=66 pi: KL init 1.7989 -> final 0.1605  TV=0.1787 leak=0.665 [68s]

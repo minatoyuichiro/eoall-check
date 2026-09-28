@@ -1,0 +1,218 @@
+[
+ {
+  "n": 2,
+  "N": 6,
+  "R": 8,
+  "params": 20,
+  "target": "rand0",
+  "F_proc": 0.730252,
+  "leak": 0.21
+ },
+ {
+  "n": 2,
+  "N": 6,
+  "R": 8,
+  "params": 20,
+  "target": "rand1",
+  "F_proc": 0.898424,
+  "leak": 0.0093
+ },
+ {
+  "n": 2,
+  "N": 6,
+  "R": 8,
+  "params": 20,
+  "target": "rand2",
+  "F_proc": 0.617093,
+  "leak": 0.31
+ },
+ {
+  "n": 2,
+  "N": 6,
+  "R": 8,
+  "params": 20,
+  "target": "gpt2_cproj",
+  "F_proc": 0.654792,
+  "leak": 0.23
+ },
+ {
+  "n": 2,
+  "N": 6,
+  "R": 12,
+  "params": 30,
+  "target": "rand0",
+  "F_proc": 0.953927,
+  "leak": 0.035
+ },
+ {
+  "n": 2,
+  "N": 6,
+  "R": 12,
+  "params": 30,
+  "target": "rand1",
+  "F_proc": 0.956671,
+  "leak": 0.012
+ },
+ {
+  "n": 2,
+  "N": 6,
+  "R": 12,
+  "params": 30,
+  "target": "rand2",
+  "F_proc": 0.904187,
+  "leak": 0.084
+ },
+ {
+  "n": 2,
+  "N": 6,
+  "R": 12,
+  "params": 30,
+  "target": "gpt2_cproj",
+  "F_proc": 0.878196,
+  "leak": 0.081
+ },
+ {
+  "n": 2,
+  "N": 6,
+  "R": 16,
+  "params": 40,
+  "target": "rand0",
+  "F_proc": 0.986646,
+  "leak": 0.012
+ },
+ {
+  "n": 2,
+  "N": 6,
+  "R": 16,
+  "params": 40,
+  "target": "rand1",
+  "F_proc": 0.986647,
+  "leak": 0.0078
+ },
+ {
+  "n": 2,
+  "N": 6,
+  "R": 16,
+  "params": 40,
+  "target": "rand2",
+  "F_proc": 0.974782,
+  "leak": 0.02
+ },
+ {
+  "n": 2,
+  "N": 6,
+  "R": 16,
+  "params": 40,
+  "target": "gpt2_cproj",
+  "F_proc": 0.975133,
+  "leak": 0.022
+ },
+ {
+  "n": 2,
+  "N": 6,
+  "R": 20,
+  "params": 50,
+  "target": "rand0",
+  "F_proc": 0.999715,
+  "leak": 0.00015
+ },
+ {
+  "n": 2,
+  "N": 6,
+  "R": 20,
+  "params": 50,
+  "target": "rand1",
+  "F_proc": 0.999475,
+  "leak": 0.00045
+ },
+ {
+  "n": 2,
+  "N": 6,
+  "R": 20,
+  "params": 50,
+  "target": "rand2",
+  "F_proc": 0.998752,
+  "leak": 0.0011
+ },
+ {
+  "n": 2,
+  "N": 6,
+  "R": 20,
+  "params": 50,
+  "target": "gpt2_cproj",
+  "F_proc": 0.997287,
+  "leak": 0.0022
+ },
+ {
+  "n": 2,
+  "N": 6,
+  "R": 24,
+  "params": 60,
+  "target": "rand0",
+  "F_proc": 1.0,
+  "leak": 1.6e-13
+ },
+ {
+  "n": 2,
+  "N": 6,
+  "R": 24,
+  "params": 60,
+  "target": "rand1",
+  "F_proc": 1.0,
+  "leak": 2.9e-13
+ },
+ {
+  "n": 2,
+  "N": 6,
+  "R": 24,
+  "params": 60,
+  "target": "rand2",
+  "F_proc": 1.0,
+  "leak": 7.5e-14
+ },
+ {
+  "n": 2,
+  "N": 6,
+  "R": 24,
+  "params": 60,
+  "target": "gpt2_cproj",
+  "F_proc": 1.0,
+  "leak": 1.3e-13
+ },
+ {
+  "n": 2,
+  "N": 6,
+  "R": 28,
+  "params": 70,
+  "target": "rand0",
+  "F_proc": 1.0,
+  "leak": 1e-13
+ },
+ {
+  "n": 2,
+  "N": 6,
+  "R": 28,
+  "params": 70,
+  "target": "rand1",
+  "F_proc": 1.0,
+  "leak": 1.7e-13
+ },
+ {
+  "n": 2,
+  "N": 6,
+  "R": 28,
+  "params": 70,
+  "target": "rand2",
+  "F_proc": 1.0,
+  "leak": 1.6e-13
+ },
+ {
+  "n": 2,
+  "N": 6,
+  "R": 28,
+  "params": 70,
+  "target": "gpt2_cproj",
+  "F_proc": 1.0,
+  "leak": 7.3e-13
+ }
+]

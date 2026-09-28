@@ -1,0 +1,7 @@
+init 0       c_S^2=1.000 0.000 0.000 0.000 0.000 0.000 0.000 | cat_V8L2: TV floor 0.0528 | begin_V4L3: TV floor 0.2480
+init alt     c_S^2=0.000 0.600 0.000 0.400 0.000 0.000 0.000 | cat_V8L2: TV floor 0.0117 | begin_V4L3: TV floor 0.0000
+init 1       c_S^2=0.143 0.000 0.476 0.000 0.312 0.000 0.069 | cat_V8L2: TV floor 0.1620 | begin_V4L3: TV floor 0.2480
+init 000100  c_S^2=0.000 1.000 0.000 0.000 0.000 0.000 0.000 | cat_V8L2: TV floor 0.0117 | begin_V4L3: TV floor 0.0000
+init 010010  c_S^2=0.333 0.000 0.667 0.000 0.000 0.000 0.000 | cat_V8L2: TV floor 0.0528 | begin_V4L3: TV floor 0.2480
+init 011011  c_S^2=0.200 0.000 0.571 0.000 0.229 0.000 0.000 | cat_V8L2: TV floor 0.0528 | begin_V4L3: TV floor 0.2480
+init neel    c_S^2=0.143 0.321 0.298 0.167 0.058 0.012 0.001 | cat_V8L2: TV floor 0.0000 | begin_V4L3: TV floor 0.0000

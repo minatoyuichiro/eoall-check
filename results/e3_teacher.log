@@ -1,0 +1,5 @@
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 6249.76it/s]
+cat_V8L2: prompt='The cat sat on' vocab=[' the', ' a', ' her', ' its', ' his', ' top', ' my', ' one']  H=3.778 bits (max 6.0)  max p=0.434
+begin_V8L2: prompt='In the beginning' vocab=[',', ' of', ' I', ' the', ' there', ' it', ' he', ' you']  H=3.659 bits (max 6.0)  max p=0.207
+cat_V4L3: prompt='The cat sat on' vocab=[' the', ' a', ' her', ' its']  H=4.356 bits (max 6.0)  max p=0.205
+begin_V4L3: prompt='In the beginning' vocab=[',', ' of', ' I', ' the']  H=3.454 bits (max 6.0)  max p=0.248
