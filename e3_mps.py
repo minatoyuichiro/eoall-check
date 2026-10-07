@@ -33,7 +33,11 @@ def fit(p_teacher, n, chi, steps=3000, seed=0):
     return best[0], c.detach()
 
 if __name__ == '__main__':
+    import sys, os
     T = json.load(open('results/e3_teachers.json'))
+    sel = sys.argv[1].split(',') if len(sys.argv) > 1 else None
+    if sel: T = {k: v for k, v in T.items() if k in sel}
+    prev = json.load(open('results/e3_mps.json')) if os.path.exists('results/e3_mps.json') else {}
     out = {}
     for name, d in T.items():
         n = int(math.log2(len(d['p'])))
@@ -45,4 +49,4 @@ if __name__ == '__main__':
             k = int(np.argmin(kls)); c = cs[k]
             out[name][f'chi{chi}'] = dict(kl=kls[k], kl_seeds=kls, amp=c.numpy().tolist(), p=(c.numpy() ** 2).tolist())
             print(f"{name} chi={chi}: KL(teacher||MPS) = {kls[k]:.4f} nats  (seeds {np.round(kls,4)})", flush=True)
-    json.dump(out, open('results/e3_mps.json', 'w'))
+    json.dump({**prev, **out}, open('results/e3_mps.json', 'w'))

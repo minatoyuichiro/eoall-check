@@ -12,12 +12,15 @@ teach = json.load(open('results/e3_teachers.json'))
 n = 6; N = 12
 bases = sector_bases(N, 0.0)
 Ss = sorted(bases)
-for init in ['0', 'alt', '1', '000100', '010010', '011011', 'neel']:
+import sys
+tnames = sys.argv[1].split(',') if len(sys.argv) > 1 else ['cat_V8L2', 'begin_V4L3']
+inits = sys.argv[2].split(',') if len(sys.argv) > 2 else ['0', 'alt', '1', '000100', '010010', '011011', 'neel']
+for init in inits:
     psi0 = product_state('st', n, init).reshape(-1)
     c2 = np.array([float((bases[S].conj().T @ psi0).norm() ** 2) for S in Ss])
     cum = np.cumsum(c2)
     line = f"init {init:7s} c_S^2=" + " ".join(f"{x:.3f}" for x in c2)
-    for t in ['cat_V8L2', 'begin_V4L3']:
+    for t in tnames:
         p = np.array(teach[t]['p']).reshape(-1)
         w = np.array([bin(i).count('1') for i in range(64)])
         # image of Pi_b with |b|=k has total spin S in Lam(k): {0..k} for k != 1, {1} for k == 1

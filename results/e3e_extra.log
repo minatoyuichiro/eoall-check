@@ -1,0 +1,2 @@
+init alt     c_S^2=0.000 0.600 0.000 0.400 0.000 0.000 0.000 | once_V8L2: TV floor 0.2679 | sky_V4L3: TV floor 0.0016 | river_V8L2: TV floor 0.0079 | door_V4L3: TV floor 0.1532
+init neel    c_S^2=0.143 0.321 0.298 0.167 0.058 0.012 0.001 | once_V8L2: TV floor 0.2026 | sky_V4L3: TV floor 0.0100 | river_V8L2: TV floor 0.0008 | door_V4L3: TV floor 0.0103

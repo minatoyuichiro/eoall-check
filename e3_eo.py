@@ -27,7 +27,7 @@ def pretrain_fid(psi0, th, sched, N, target, iters=300):
     with torch.no_grad():
         return float(fidelity(run_network(psi0, th, sched, N), target))
 
-def main(enc, tname, init_state, sname, mode, steps, threads):
+def main(enc, tname, init_state, sname, mode, steps, threads, seed=0):
     torch.set_num_threads(threads)
     T = json.load(open('results/e3_teachers.json'))[tname]
     M = json.load(open('results/e3_mps.json'))[tname]
@@ -37,8 +37,8 @@ def main(enc, tname, init_state, sname, mode, steps, threads):
     kind, val = sname.split('=')
     sched = bubble_schedule(N, int(val)) if kind == 'bubble' else staircase_schedule(N, int(val))
     psi0 = product_state(enc, n, init_state)
-    g = torch.Generator().manual_seed(0)
-    rec = dict(enc=enc, teacher=tname, n=n, N=N, init_state=init_state, sched=sname, params=n_params(sched), init=mode, steps=steps)
+    g = torch.Generator().manual_seed(seed)
+    rec = dict(enc=enc, teacher=tname, n=n, N=N, init_state=init_state, sched=sname, params=n_params(sched), init=mode, steps=steps, seed=seed)
     t0 = time.time()
     if mode.startswith('mps'):
         chi = mode[3:]
@@ -73,6 +73,7 @@ if __name__ == '__main__':
     enc, tname, init_state, sname, mode = sys.argv[1:6]
     steps = int(sys.argv[6]) if len(sys.argv) > 6 else 300
     threads = int(sys.argv[7]) if len(sys.argv) > 7 else 4
-    rec = main(enc, tname, init_state, sname, mode, steps, threads)
-    tag = f"{enc}_{tname}_{init_state}_{sname.replace('=','')}_{mode}" + (f"_s{steps}" if steps not in (300, 400) else "")
+    seed = int(sys.argv[8]) if len(sys.argv) > 8 else 0
+    rec = main(enc, tname, init_state, sname, mode, steps, threads, seed)
+    tag = f"{enc}_{tname}_{init_state}_{sname.replace('=','')}_{mode}" + (f"_s{steps}" if steps not in (300, 400) else "") + (f"_seed{seed}" if seed else "")
     json.dump(rec, open(f'results/e3c_{tag}.json', 'w'))

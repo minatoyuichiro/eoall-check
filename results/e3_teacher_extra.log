@@ -1,0 +1,6 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights:  43%|████▎     | 64/148 [00:00<00:00, 616.71it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 1181.46it/s]
+once_V8L2: prompt='Once upon a' vocab=[' time', ' certain', ' moment', ' visit', ' while', ' short', ' second', ' successful']  H=3.960 bits (max 6.0)  max p=0.190
+sky_V4L3: prompt='The sky above the city was' vocab=[' a', ' filled', ' covered', ' lit']  H=4.099 bits (max 6.0)  max p=0.149
+river_V8L2: prompt='The river flows' vocab=[' through', ' into', ' in', ' from', ' over', ' down', ' to', ',']  H=4.942 bits (max 6.0)  max p=0.142
+door_V4L3: prompt='She opened the door and' vocab=[' saw', ' walked', ' found', ' looked']  H=5.248 bits (max 6.0)  max p=0.153

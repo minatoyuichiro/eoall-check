@@ -2,7 +2,7 @@
 Restricted-vocabulary next-token chains: after a prompt, take the top-V next tokens as
 vocabulary; p(t1..tL) = prod_k p_GPT2(t_k | prompt, t_<k) renormalised over V at every step.
 V=8, L=2 -> 64 outcomes (6 bits); V=4, L=3 -> 64 outcomes (6 bits)."""
-import json, math, itertools
+import sys, json, math, itertools
 import numpy as np, torch
 from transformers import GPT2LMHeadModel, GPT2TokenizerFast
 torch.set_num_threads(4)
@@ -34,10 +34,13 @@ def teacher(prompt, V, L):
 
 if __name__ == '__main__':
     out = {}
-    for name, prompt, V, L in [('cat_V8L2', 'The cat sat on', 8, 2),
-                               ('begin_V8L2', 'In the beginning', 8, 2),
-                               ('cat_V4L3', 'The cat sat on', 4, 3),
-                               ('begin_V4L3', 'In the beginning', 4, 3)]:
+    import os
+    if os.path.exists('results/e3_teachers.json'): out = json.load(open('results/e3_teachers.json'))
+    extra = [('once_V8L2', 'Once upon a', 8, 2), ('sky_V4L3', 'The sky above the city was', 4, 3),
+             ('river_V8L2', 'The river flows', 8, 2), ('door_V4L3', 'She opened the door and', 4, 3)]
+    base = [('cat_V8L2', 'The cat sat on', 8, 2), ('begin_V8L2', 'In the beginning', 8, 2), ('cat_V4L3', 'The cat sat on', 4, 3), ('begin_V4L3', 'In the beginning', 4, 3)]
+    todo = extra if sys.argv[1:] == ['extra'] else base
+    for name, prompt, V, L in todo:
         words, P = teacher(prompt, V, L)
         H = -(P * np.log2(P + 1e-30)).sum()
         print(f"{name}: prompt={prompt!r} vocab={words}  H={H:.3f} bits (max {math.log2(len(P)):.1f})  max p={P.max():.3f}")
