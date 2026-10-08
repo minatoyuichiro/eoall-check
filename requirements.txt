@@ -1,0 +1,7 @@
+torch==2.13.0
+transformers==5.16.1
+numpy==2.2.6
+scipy==1.15.3
+sympy==1.14.0
+matplotlib
+# GPU runs (Sec. IV.G): torch 2.6.0+cu124 in a separate venv

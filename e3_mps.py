@@ -26,9 +26,10 @@ def fit(p_teacher, n, chi, steps=3000, seed=0):
         c = mps_amplitudes(ts)
         p = c ** 2; p = p / p.sum()
         loss = (pt * (torch.log(pt + 1e-12) - torch.log(p + 1e-12))).sum()
-        loss.backward(); opt.step()
+        loss.backward()
         if loss.item() < best[0]:
-            best = (loss.item(), [t.detach().clone() for t in ts])
+            best = (loss.item(), [t.detach().clone() for t in ts])   # parameters that produced this loss
+        opt.step()
     c = mps_amplitudes(best[1]); c = c / c.norm()
     return best[0], c.detach()
 

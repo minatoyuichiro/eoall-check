@@ -25,9 +25,10 @@ def main(enc, tname, init_state, sname, mode, steps, threads):
     for it in range(steps):
         opt.zero_grad()
         loss = kl(pt, S.psb_probs(S.run(psi0, th, sched)))
-        loss.backward(); opt.step()
+        loss.backward()
         hist.append(loss.item())
-        if loss.item() < best[0]: best = (loss.item(), th.detach().clone())
+        if loss.item() < best[0]: best = (loss.item(), th.detach().clone())   # parameters that produced this loss
+        opt.step()
         if it % 50 == 0: print(f"  step {it}: KL {loss.item():.4f} [{time.time()-t0:.0f}s]", flush=True)
     with torch.no_grad():
         psi = S.run(psi0, best[1], sched); p = S.psb_probs(psi)

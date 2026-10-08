@@ -13,10 +13,11 @@ def train_kl(psi0, th, sched, N, enc, n, pt, steps, lr=0.05):
         psi = run_network(psi0, th, sched, N)
         p = psb_probs(psi, enc, n)
         loss = kl(pt, p)
-        loss.backward(); opt.step()
+        loss.backward()
         hist.append(loss.item())
         if loss.item() < best[0]:
-            best = (loss.item(), th.detach().clone())
+            best = (loss.item(), th.detach().clone())   # parameters that produced this loss
+        opt.step()
     return best, hist
 
 def pretrain_fid(psi0, th, sched, N, target, iters=300):

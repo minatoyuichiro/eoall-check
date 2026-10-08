@@ -7,9 +7,10 @@ for f in glob.glob('results/e7_*.json'):
     if 'table' in f: continue
     r = json.load(open(f))
     key = (r['enc'], r['teacher'], r['R']); k = r['kind']; s = r.get('seed', 0)
+    val = r.get('kl_saved', r['kl_final'])          # KL of the saved circuit (review 2026-10-07)
     cur = runs[key][k].get(s)
-    if cur is None or r['kl_final'] < cur:
-        runs[key][k][s] = r['kl_final']
+    if cur is None or val < cur:
+        runs[key][k][s] = val
 kinds = ['bubble', 'grid', 'roundrobin', 'randmatch']
 out = {}
 for key in sorted(runs):

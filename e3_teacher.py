@@ -40,6 +40,7 @@ if __name__ == '__main__':
              ('river_V8L2', 'The river flows', 8, 2), ('door_V4L3', 'She opened the door and', 4, 3)]
     base = [('cat_V8L2', 'The cat sat on', 8, 2), ('begin_V8L2', 'In the beginning', 8, 2), ('cat_V4L3', 'The cat sat on', 4, 3), ('begin_V4L3', 'In the beginning', 4, 3)]
     todo = extra if sys.argv[1:] == ['extra'] else base
+    if len(sys.argv) >= 5 and sys.argv[1] not in ('extra',): todo = [(sys.argv[1], sys.argv[2], int(sys.argv[3]), int(sys.argv[4]))]
     for name, prompt, V, L in todo:
         words, P = teacher(prompt, V, L)
         H = -(P * np.log2(P + 1e-30)).sum()

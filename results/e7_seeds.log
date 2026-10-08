@@ -101,3 +101,6 @@ eo cat_V8L2 |0> bubble R=18 p=153 cov=0.11 random: KL 3.1251 -> 0.0279  TV=0.052
 eo cat_V8L2 |0> roundrobin R=18 p=162 cov=1.00 pi: KL 2.7997 -> 0.1461  TV=0.1570 leak=0.943 [2260s]
 eo cat_V8L2 |0> roundrobin R=18 p=162 cov=1.00 random: KL 2.7302 -> 0.0266  TV=0.0480 leak=0.973 [2285s]
 eo cat_V8L2 |0> randmatch R=18 p=162 cov=0.63 pi: KL 4.4291 -> 0.0215  TV=0.0443 leak=0.975 [11871s]
+eo cat_V8L2 |0> randmatch R=18 p=162 cov=0.63 random: KL 2.7275 -> 0.0146  TV=0.0344 leak=0.910 [13414s]
+eo cat_V8L2 |0> bubble R=36 p=306 cov=0.11 random: KL 2.8611 -> 0.0038  TV=0.0185 leak=0.951 [16094s]
+E7 SEEDS DONE

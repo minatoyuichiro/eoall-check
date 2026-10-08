@@ -1,0 +1,9 @@
+eo cat_V8L2 |0> roundrobin R=18 p=162 cov=1.00 pi: KL 3.0133 -> 0.1618  TV=0.1631 leak=0.939 [1602s]
+eo cat_V8L2 |0> bubble R=18 p=153 cov=0.11 pi: KL 2.8735 -> 0.0118  TV=0.0335 leak=0.946 [1930s]
+eo cat_V8L2 |0> bubble R=18 p=153 cov=0.11 random: KL 3.2010 -> 0.0303  TV=0.0678 leak=0.962 [2196s]
+eo cat_V8L2 |0> grid R=18 p=123 cov=0.18 random: KL 2.7227 -> 0.0159  TV=0.0394 leak=0.960 [2355s]
+eo cat_V8L2 |0> grid R=18 p=123 cov=0.18 pi: KL 2.7685 -> 0.0353  TV=0.0622 leak=0.973 [2358s]
+eo cat_V8L2 |0> roundrobin R=18 p=162 cov=1.00 random: KL 3.3483 -> 0.0360  TV=0.0655 leak=0.975 [825s]
+eo cat_V8L2 |0> randmatch R=18 p=162 cov=0.63 pi: KL 5.6968 -> 0.0244  TV=0.0472 leak=0.970 [511s]
+eo cat_V8L2 |0> randmatch R=18 p=162 cov=0.63 random: KL 2.8568 -> 0.0255  TV=0.0452 leak=0.968 [275s]
+E7 SUNEO DONE

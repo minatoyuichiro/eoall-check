@@ -1,0 +1,21 @@
+results/e10_st_cat_V32L2_neel_bubble60_pi.json: noiseless KL 0.2167 (stored 0.2168)
+  sigma 0.01: KL 0.2229 +- 0.0008  TV 0.2370
+  sigma 0.03: KL 0.2740 +- 0.0063  TV 0.2758
+  sigma 0.1: KL 0.9478 +- 0.0743  TV 0.5896
+results/e10_st_begin_V4L5_neel_bubble60_pi.json: noiseless KL 0.1514 (stored 0.1513)
+  sigma 0.01: KL 0.1569 +- 0.0006  TV 0.1740
+  sigma 0.03: KL 0.1992 +- 0.0058  TV 0.2073
+  sigma 0.1: KL 0.7617 +- 0.0608  TV 0.5058
+results/e10_st_cat_V64L2_neel_bubble96_pi.json: noiseless KL 0.3516 (stored 0.3518)
+  sigma 0.01: KL 0.3646 +- 0.0009  TV 0.2750
+  sigma 0.03: KL 0.4725 +- 0.0089  TV 0.3511
+  sigma 0.1: KL 1.8591 +- 0.1037  TV 0.8013
+results/e10_st_begin_V8L4_neel_bubble96_pi.json: noiseless KL 0.2398 (stored 0.2400)
+  sigma 0.01: KL 0.2510 +- 0.0011  TV 0.2568
+  sigma 0.03: KL 0.3392 +- 0.0078  TV 0.3108
+  sigma 0.1: KL 1.5419 +- 0.1412  TV 0.7152
+results/e10_eo_cat_V32L2_0_bubble30_pi_c64.json: noiseless KL 0.2254 (stored 0.2255)
+  sigma 0.01: KL 0.2290 +- 0.0004  TV 0.2062
+  sigma 0.03: KL 0.2556 +- 0.0034  TV 0.2319
+  sigma 0.1: KL 0.6992 +- 0.0713  TV 0.4924
+E10 NOISE DONE
