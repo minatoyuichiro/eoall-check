@@ -22,15 +22,17 @@ def fig_schedule():
     ax.tick_params(length=0)
     ax.set_title(r'bubble-sort schedule, $N=6$, $R=N$', fontsize=7)
     ax = axes[1]; ax.axis('off')
-    boxes = ['GPT-2 (restricted vocab.)', r'MPS Born machine ($\chi$)', 'exchange network\n(bubble-sort, $R$ rounds)', 'PSB readout $p(b)$']
-    ys = [0.93, 0.66, 0.36, 0.07]
-    for k, (t, y) in enumerate(zip(boxes, ys)):
-        ax.text(0.5, y, t, ha='center', va='center', fontsize=6.3,
-                bbox=dict(boxstyle='round,pad=0.3', fc='#eef3fb' if k in (0, 1) else '#fbeeee', ec='0.4', lw=0.6), transform=ax.transAxes)
-    for (y0, y1, lab) in [(0.93, 0.66, 'KL'), (0.66, 0.36, 'KL'), (0.36, 0.07, '')]:
-        ax.annotate('', xy=(0.5, y1 + 0.085 if y1 > 0.2 else y1 + 0.06), xytext=(0.5, y0 - 0.065 if y0 < 0.5 else y0 - 0.06),
-                    xycoords='axes fraction', arrowprops=dict(arrowstyle='->', lw=0.7))
-        if lab: ax.text(0.56, (y0 + y1) / 2, lab, fontsize=6, va='center', transform=ax.transAxes)
+    # teacher at the top; two independent branches: MPS (classical control) and the exchange network -> PSB
+    bx = dict(boxstyle='round,pad=0.3', ec='0.4', lw=0.6)
+    ax.text(0.5, 0.92, 'GPT-2 teacher $p_t$\n(restricted vocab.)', ha='center', va='center', fontsize=6.3, bbox=dict(fc='#eef3fb', **bx), transform=ax.transAxes)
+    ax.text(0.22, 0.50, 'MPS Born\nmachine ($\\chi$)\n(classical control)', ha='center', va='center', fontsize=6.0, bbox=dict(fc='#eef3fb', **bx), transform=ax.transAxes)
+    ax.text(0.74, 0.55, 'exchange network\n(bubble-sort, $R$ rounds)', ha='center', va='center', fontsize=6.3, bbox=dict(fc='#fbeeee', **bx), transform=ax.transAxes)
+    ax.text(0.74, 0.12, 'PSB readout $p(b)$', ha='center', va='center', fontsize=6.3, bbox=dict(fc='#fbeeee', **bx), transform=ax.transAxes)
+    ax.annotate('', xy=(0.26, 0.66), xytext=(0.42, 0.84), xycoords='axes fraction', arrowprops=dict(arrowstyle='->', lw=0.7))
+    ax.annotate('', xy=(0.70, 0.68), xytext=(0.58, 0.84), xycoords='axes fraction', arrowprops=dict(arrowstyle='->', lw=0.7))
+    ax.annotate('', xy=(0.74, 0.22), xytext=(0.74, 0.44), xycoords='axes fraction', arrowprops=dict(arrowstyle='->', lw=0.7))
+    ax.text(0.26, 0.78, 'KL', fontsize=6, transform=ax.transAxes); ax.text(0.66, 0.78, 'KL', fontsize=6, transform=ax.transAxes)
+    ax.text(0.5, 0.0, 'KL$(p_t\\|p)$ trained end-to-end', ha='center', fontsize=5.5, transform=ax.transAxes)
     fig.tight_layout(pad=0.3); fig.savefig(OUT + 'fig_schedule.pdf'); fig.savefig(OUT + 'fig_schedule.png', dpi=160); plt.close(fig)
 
 # ---- Fig 2: reach vs rounds (state prep n=2,3; unitary n=2) ---------------------------
