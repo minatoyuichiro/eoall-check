@@ -36,8 +36,11 @@ for ax, family in zip(axes, ['cat', 'begin']):
     ax.set_yscale('log'); ax.set_xlabel('rounds $R/N$'); ax.set_title({'cat': '"The cat sat on"', 'begin': '"In the beginning"'}[family], fontsize=9)
     ax.grid(alpha=0.3)
 axes[0].set_ylabel('KL (nat)')
-axes[1].legend(fontsize=6.5, ncol=2, loc='upper right')
-fig.text(0.5, -0.02, 'horizontal lines: MPS at $\\chi=3$ (dotted) and $\\chi=4$ (dash-dotted) for each teacher', ha='center', fontsize=7)
+h, l = axes[0].get_legend_handles_labels(); h2, l2 = axes[1].get_legend_handles_labels()
+for hh, ll in zip(h2, l2):
+    if ll not in l: h.append(hh); l.append(ll)
+fig.legend(h, l, fontsize=7, ncol=6, loc='lower center', bbox_to_anchor=(0.5, -0.03), frameon=False)
+fig.text(0.5, -0.09, 'horizontal lines: MPS at $\\chi=3$ (dotted) and $\\chi=4$ (dash-dotted) for each teacher', ha='center', fontsize=7)
 fig.tight_layout()
 fig.savefig('../paper/src/fig_e10.pdf', bbox_inches='tight'); fig.savefig('../paper/src/fig_e10.png', dpi=150, bbox_inches='tight')
 for k in sorted(runs): print(k, [round(v, 3) for v in sorted(runs[k])])

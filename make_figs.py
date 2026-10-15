@@ -8,7 +8,7 @@ plt.rcParams.update({'font.size': 8, 'axes.labelsize': 8, 'legend.fontsize': 7, 
 
 # ---- Fig 1: schedule schematic + pipeline -------------------------------------------
 def fig_schedule():
-    fig, axes = plt.subplots(1, 2, figsize=(3.4, 1.9), gridspec_kw=dict(width_ratios=[1.25, 1]))
+    fig, axes = plt.subplots(1, 2, figsize=(3.4, 2.2), gridspec_kw=dict(width_ratios=[1.3, 1]))
     ax = axes[0]; N, R = 6, 6
     for i in range(N):
         ax.plot([-.5, R - .5], [i, i], color='0.6', lw=0.8, zorder=1)
@@ -21,18 +21,19 @@ def fig_schedule():
     for sp in ['top', 'right', 'left']: ax.spines[sp].set_visible(False)
     ax.tick_params(length=0)
     ax.set_title(r'bubble-sort schedule, $N=6$, $R=N$', fontsize=7)
-    ax = axes[1]; ax.axis('off')
-    # teacher at the top; two independent branches: MPS (classical control) and the exchange network -> PSB
-    bx = dict(boxstyle='round,pad=0.3', ec='0.4', lw=0.6)
-    ax.text(0.5, 0.92, 'GPT-2 teacher $p_t$\n(restricted vocab.)', ha='center', va='center', fontsize=6.3, bbox=dict(fc='#eef3fb', **bx), transform=ax.transAxes)
-    ax.text(0.22, 0.50, 'MPS Born\nmachine ($\\chi$)\n(classical control)', ha='center', va='center', fontsize=6.0, bbox=dict(fc='#eef3fb', **bx), transform=ax.transAxes)
-    ax.text(0.74, 0.55, 'exchange network\n(bubble-sort, $R$ rounds)', ha='center', va='center', fontsize=6.3, bbox=dict(fc='#fbeeee', **bx), transform=ax.transAxes)
-    ax.text(0.74, 0.12, 'PSB readout $p(b)$', ha='center', va='center', fontsize=6.3, bbox=dict(fc='#fbeeee', **bx), transform=ax.transAxes)
-    ax.annotate('', xy=(0.26, 0.66), xytext=(0.42, 0.84), xycoords='axes fraction', arrowprops=dict(arrowstyle='->', lw=0.7))
-    ax.annotate('', xy=(0.70, 0.68), xytext=(0.58, 0.84), xycoords='axes fraction', arrowprops=dict(arrowstyle='->', lw=0.7))
-    ax.annotate('', xy=(0.74, 0.22), xytext=(0.74, 0.44), xycoords='axes fraction', arrowprops=dict(arrowstyle='->', lw=0.7))
-    ax.text(0.26, 0.78, 'KL', fontsize=6, transform=ax.transAxes); ax.text(0.66, 0.78, 'KL', fontsize=6, transform=ax.transAxes)
-    ax.text(0.5, 0.0, 'KL$(p_t\\|p)$ trained end-to-end', ha='center', fontsize=5.5, transform=ax.transAxes)
+    ax = axes[1]; ax.axis('off'); ax.set_xlim(0, 1); ax.set_ylim(0, 1)
+    # teacher at the top; two independent branches: MPS (classical control, left) and the exchange network -> PSB (right)
+    bx = dict(boxstyle='round,pad=0.25', ec='0.4', lw=0.6)
+    ar = dict(arrowstyle='->', lw=0.7, shrinkA=0, shrinkB=0)
+    ax.text(0.5, 0.90, 'GPT-2 teacher $p_t$\n(restricted vocab.)', ha='center', va='center', fontsize=6.6, bbox=dict(fc='#eef3fb', **bx))
+    ax.text(0.21, 0.44, 'MPS Born\nmachine ($\\chi$)\nclassical\ncontrol', ha='center', va='center', fontsize=6.3, bbox=dict(fc='#eef3fb', **bx))
+    ax.text(0.76, 0.52, 'exchange\nnetwork\n($R$ rounds)', ha='center', va='center', fontsize=6.4, bbox=dict(fc='#fbeeee', **bx))
+    ax.text(0.76, 0.15, 'PSB readout\n$p(b)$', ha='center', va='center', fontsize=6.4, bbox=dict(fc='#fbeeee', **bx))
+    ax.annotate('', xy=(0.24, 0.66), xytext=(0.40, 0.80), arrowprops=ar)
+    ax.annotate('', xy=(0.73, 0.70), xytext=(0.60, 0.80), arrowprops=ar)
+    ax.annotate('', xy=(0.76, 0.27), xytext=(0.76, 0.37), arrowprops=ar)
+    ax.text(0.35, 0.705, 'KL', fontsize=6.2, ha='left', va='center'); ax.text(0.63, 0.73, 'KL', fontsize=6.2, ha='right', va='center')
+    ax.text(0.5, -0.05, 'both branches minimise KL$(p_t\\|\\cdot)$', ha='center', fontsize=6)
     fig.tight_layout(pad=0.3); fig.savefig(OUT + 'fig_schedule.pdf'); fig.savefig(OUT + 'fig_schedule.png', dpi=160); plt.close(fig)
 
 # ---- Fig 2: reach vs rounds (state prep n=2,3; unitary n=2) ---------------------------
