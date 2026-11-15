@@ -1,7 +1,7 @@
 # Bubble-sort exchange networks — numerics
 
-Code and raw results (release `v1.1`, matching the arXiv submission) for the manuscript *Bubble-Sort Exchange Networks: Symmetry Selection Rules and
-Language-Model Distillation on Exchange-Only Spin Chains* (Y. Minato, blueqat).
+Code and raw results (release `v1.3`, commit `94d4f87`, matching the arXiv submission) for the manuscript *Bubble-Sort Exchange Networks: Symmetry Selection Rules and
+Language-Model Distillation on Exchange-Only Spin Chains* (Y. Minato, blueqat), arXiv:2610.22093 (https://arxiv.org/abs/2610.22093).
 
 Everything in Secs. II-IV.F runs on a CPU with `numpy`, `scipy`, `torch` (CPU build) and, for the GPT-2 teachers,
 `transformers` (`requirements.txt`); the 10-14-qubit runs of Sec. IV.G used a CUDA build of torch (2.6.0+cu124) on a shared GPU with a 4 GB budget. All results JSON files carry `kl_saved`/`tv_saved` (values re-evaluated from the stored pulse areas; see Appendix B). All results in `results/` were produced on a single 32-core machine; the `.log` files are
@@ -27,7 +27,7 @@ the console output of the corresponding script and the `.json` files hold the nu
 | `e7_connect.py`, `run_e7.sh`, `e7_table.py` | chain vs. 2-D array vs. round robin vs. random matchings at equal depth (seed 0) | Sec. IV.D, Table IV |
 | `make_figs.py` | data figures (Figs. 2, 4, 6&ndash;9) | |
 | `make_fig_circuit.py` | explanatory figures (no data): ZZ·SWAP vs exchange pulse (Fig. 1), circuit diagram (Fig. 3), selection-rule picture (Fig. 5) | |
-| `zzswap_search.py`, `best_x.npy`, `best_pat.txt` | earlier 4-spin logical ZZ(θ)·SWAP pulse search (not used in the paper) | |
+| `zzswap_search.py`, `best_x.npy` | earlier 4-spin logical ZZ(θ)·SWAP pulse search (not used in the paper) | |
 
 ## Reproducing the headline numbers
 
